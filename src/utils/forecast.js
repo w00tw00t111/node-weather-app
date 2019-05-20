@@ -10,7 +10,6 @@ const forecast = (lat, long, callback) => {
         } else {
             callback(undefined, body.daily.data[0].summary + ' ' + 'It is currently ' + body.currently.temperature + ' degrees out.' + ' There is a ' + body.daily.data[0].precipProbability * 100 + '% chance of rain. Real feel temperature is: ' + body.currently.apparentTemperature + ' degrees')
         }
-        console.log(body.currently)
     })    
 }
 
